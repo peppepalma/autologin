@@ -1,0 +1,19 @@
+﻿{
+"name":"Autologin",
+"version":"1.0",
+"description":"Un autologin per http://localhost:82",
+"icons":{
+"48":"icon48.png"
+},
+"content_scripts":[{
+"matches":["http://localhost:82/home.asp"],
+"js":["script.js"]
+}],
+"page_actions": [
+		{
+			"id": "WhoIsPageAction",
+			"name": "Check whois for this domain",
+			"icons": ["icon48.png"]
+		}
+	]
+}
